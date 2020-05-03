@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/text1"
+        android:textSize="30sp"
+        android:textColor="@color/red"
+        android:layout_centerInParent="true"
+         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_name"
+        android:id="@+id/btn1"
+        android:background="@color/red"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn3"
+        android:text="btn3"
+        android:layout_below="@id/btn1"
+        android:onClick="sms"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:background="#e6e6e6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/btn3"
+        android:inputType="phone"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_below="@id/btn3"
+        android:layout_height="200dp"
+        android:src="@drawable/kitty_551554_1920"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/btn3"
+        android:id="@+id/frag1"
+        class="com.xyzTechnologies.helloworldapp.BlankFragment"/>
+
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="149dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        tools:layout_editor_absoluteY="206dp"></LinearLayout>
+
+
+</RelativeLayout>
